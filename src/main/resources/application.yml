@@ -1,0 +1,14 @@
+
+commision.list:
+  -
+    type: TYPE_A
+    method: percentage
+    value: 1
+  -
+    type: TYPE_B
+    method: by_piece
+    value: 1
+
+  - type: TYPE_C
+    method: fixed
+    value: 5
