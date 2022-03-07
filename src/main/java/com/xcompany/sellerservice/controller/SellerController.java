@@ -9,8 +9,7 @@ import com.xcompany.sellerservice.domain.SaleTypeA;
    @Controller
    public class SellerController {
 
-   //TODO aybe should receive a generic sale, with the type on the payload
-   //And refuses (400)
+   //Maybe it should receive a generic sale, with the type on the payload and refuses (400)
 
    private ExecuteSale executeSale;
 

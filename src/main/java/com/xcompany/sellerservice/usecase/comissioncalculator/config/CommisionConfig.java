@@ -11,6 +11,8 @@ import java.util.List;
 @ConfigurationProperties(prefix = "commisions")
 public class CommisionConfig {
 
+    //This configuration could be stored in other manners
+
     private List<Commision> list;
 
     public Commision get(Sell sell){
