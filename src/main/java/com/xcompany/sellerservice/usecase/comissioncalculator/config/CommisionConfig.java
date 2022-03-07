@@ -17,7 +17,7 @@ public class CommisionConfig {
 
     public Commision get(Sell sell){
         return list.stream()
-                .filter(c -> c.getType().equalsIgnoreCase(sell.getSaleType()))
+                .filter(c -> c.getSaleType().equalsIgnoreCase(sell.getSaleType()))
                 .findAny()
                 .orElse(null);
     }
