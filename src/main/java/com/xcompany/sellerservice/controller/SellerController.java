@@ -1,17 +1,17 @@
 package com.xcompany.sellerservice.controller;
 
-import com.xcompany.sellerservice.domain.SaleTypeA;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            import com.xcompany.sellerservice.domain.SaleTypeB;
-   import com.xcompany.sellerservice.domain.SaleTypeC;
-   import com.xcompany.sellerservice.usecase.executesale.ExecuteSale;
-   import org.springframework.stereotype.Controller;
+    import com.xcompany.sellerservice.domain.SaleTypeA;
+    import com.xcompany.sellerservice.domain.SaleTypeB;
+    import com.xcompany.sellerservice.domain.SaleTypeC;
+    import com.xcompany.sellerservice.usecase.executesale.ExecuteSale;
+    import org.springframework.stereotype.Controller;
 
-   @Controller
-   public class SellerController {
+    @Controller
+    public class SellerController {
 
-   //Maybe it should receive a generic sale, with the type on the payload and refuses (400)
+    //Maybe it should receive a generic sale, with the type on the payload and refuses wrong types (422)
 
-   private ExecuteSale executeSale;
+    private ExecuteSale executeSale;
 
     SellerController(ExecuteSale executeSale){
         this.executeSale = executeSale;
